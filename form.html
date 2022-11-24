@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic html form</title>
+    <style>
+      fieldset {
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Basic HTML Form</h1>
+    </header>
+    <main>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Name</legend>
+            <label for="fname">First Name</label>
+            <br />
+            <input id="fname" type="text" value="areej" />
+            <br />
+            <label for="lname">Last Name</label>
+            <br />
+            <input id="lname" type="text" value="mahjoub" />
+            <br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Other Questions</legend>
+
+            <!-- Radio Button -->
+            <p>Choose a drink:</p>
+            <input type="radio" id="coffee" name="drink" value="Coffee" />
+            <label for="Coffee">Coffee </label><br />
+            <input type="radio" id="tea" name="drink" value="tea" />
+            <label for="tea">Tea</label><br />
+            <input
+              type="radio"
+              id="hot-chocolate"
+              name="drink"
+              value="hot-chocolate"
+            />
+            <label for="hot-chocolate">Hot chocolate</label>
+            <!--  -->
+
+            <!--Checkboxes for multi options-->
+            <p>What ice cream do you like ?</p>
+            <input
+              type="checkbox"
+              id="chocolate"
+              name="chocolate"
+              value="Chocolate"
+            />
+            <label for="chocolate"> Chocolate</label><br />
+
+            <input
+              type="checkbox"
+              id="chocolate-pudding"
+              name="chocolate-pudding"
+              value="chocolate-pudding"
+            />
+            <label for="chocolate"> Chocolate Pudding</label><br />
+
+            <input
+              type="checkbox"
+              id="vanilla"
+              name="vanilla"
+              value="vanilla"
+            />
+            <label for="vanilla"> Vanilla</label><br />
+
+            <input
+              type="checkbox"
+              id="strawberry"
+              name="strawberry"
+              value="strawberry"
+            />
+            <label for="strawberry"> Strawberry</label><br />
+            <!--Checkboxe -->
+
+            <p>Select a school</p>
+            <select name="scholl" id="scholl">
+              <option value="harvard" selected>Harvard</option>
+              <option value="ucas">UCAS</option>
+            </select>
+
+            <!-- Textarea -->
+            <p>Please provide your comments:</p>
+            <textarea name="comments" rows="5" cols="50"> </textarea>
+            <!--  -->
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
